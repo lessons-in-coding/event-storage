@@ -1,0 +1,22 @@
+.container {
+  width: 70%;
+  margin: 0 auto;
+  border: 10px solid #058605;
+  font-size: 32px;
+  padding: 40px;
+  cursor: pointer;
+}
+
+.container ul {
+  border: 5px solid red;
+  margin: 3% auto;
+  width: 60vw;
+  padding: 40px;
+}
+
+.event li {
+  list-style: none;
+  margin: 40px;
+  border: 1px solid #000;
+  text-align: center;
+}

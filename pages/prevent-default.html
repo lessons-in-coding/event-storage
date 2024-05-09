@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prevent Default</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Event Listener</h1>
+      <!-- <img id="logo" src="#" alt="image of a plant" /> -->
+      <!-- <h1>Kids</h1> -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./deligations.html">Deligations</a></li>
+          <li><a href="#">PreventDefault</a></li>
+          <li><a href="./eventListener.html">EventListener</a></li>
+          <li><a href="./storage.html">Storage</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main-content">
+      <h1>
+        <a href="https://youtu.be/iHEN0obf3TA?si=YZCZgT6_9HoW043Z"
+          >Prevent Default</a
+        >
+      </h1>
+      <p>Right-click for a logo surprise!</p>
+      <div class="container"></div>
+      <!-- <a href="https://www.wikipedia.org">Wikipedia</a>
+      <input type="checkbox" name="" id="" /> -->
+    </section>
+    <footer>
+      <p>&copy; 2024 Event Listner</p>
+    </footer>
+    <script>
+      const container = document.querySelector(".container");
+
+      //contextmenu means right-click
+      //dblclick means double-click
+      //both document and window are objects provided by the browser's JavaScript environment.
+      window.addEventListener("contextmenu", (e) => {
+        // console.log(e);
+        e.preventDefault();
+        const img = document.createElement("img");
+        img.src = "../images/mylogo.jpeg";
+        container.appendChild(img);
+      });
+    </script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
+
+<!-- 
+  // Create a new section element with the id "main-content"
+const section = document.createElement("section");
+section.id = "main-content";
+
+// Create a new article element with the class "course"
+const article = document.createElement("article");
+article.classList.add("course");
+
+// Create a new h2 element with the text "Event Bubbling, Capture, and Target"
+const h2 = document.createElement("h2");
+h2.textContent = "Event Bubbling, Capture, and Target";
+
+// Create a new div element with the class "gallery-item"
+const div = document.createElement("div");
+div.classList.add("gallery-item");
+
+// Create a new img element
+const img = document.createElement("img");
+img.src = "../images/3-phases-of-propergation.png";
+img.alt = "3-phases of event deligation png";
+
+// Append the img element to the div element
+div.appendChild(img);
+
+// Append the h2 and div elements to the article element
+article.appendChild(h2);
+article.appendChild(div);
+
+// Append the article element to the section element
+section.appendChild(article);
+
+// Finally, append the section element to the document body or any other desired parent element
+document.body.appendChild(section);
+
+ -->

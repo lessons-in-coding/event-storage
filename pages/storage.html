@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage & Cookie</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      h4 {
+        text-align: center;
+        font-size: 34px;
+        font-weight: 700;
+      }
+
+      button {
+        padding: 10px;
+        margin: 24px;
+        cursor: pointer;
+        font-size: 24px;
+        background-color: #247ba0;
+        color: white;
+      }
+
+      .container {
+        display: block;
+        margin: 80px auto;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 60vw;
+        background-color: #f0ead6;
+      }
+
+      .wrapper {
+        padding-top: 20px;
+      }
+
+      .card-contents {
+        padding: 5px 5px 10px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Event Listener</h1>
+      <!-- <img id="logo" src="#" alt="image of a plant" /> -->
+      <!-- <h1>Kids</h1> -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./deligations.html">Deligations</a></li>
+          <li><a href="./prevent-default.html">PreventDefault</a></li>
+          <li><a href="./eventListener.html">EventListener</a></li>
+          <li><a href="#">Storage</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main-content">
+      <h1>
+        <a href="https://youtu.be/HAFd6Lnx6sE?si=un7NwKPNq1M5wrDV"
+          >Session-Local-Storage & Cookie</a
+        >
+      </h1>
+      <article class="course">
+        <div class="wrapper">
+          <div class="container">
+            <div class="card-contents">
+              <h4>Current Count: <span id="count">0</span></h4>
+              <button id="decrement">Decrement</button>
+              <button id="increment">Increment</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <p>&copy; 2024 Event Listner</p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/storage.js"></script>
+  </body>
+</html>
